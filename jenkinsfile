@@ -17,7 +17,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 sh 'cd /home/talos/JavaProject2
-                sh 'java HelloWorld'
+                sh 'rm HelloWorld.class'
             }
         }
     }
