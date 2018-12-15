@@ -1,2 +1,2 @@
-# JavaProject
+# JavaProject2
 HelloWorld
