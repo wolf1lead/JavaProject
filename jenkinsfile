@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage ('Compile Stage') {
+            steps {
+                sh 'cd /home/talos/JavaProject2
+                sh 'javac HelloWorld.java'
+            }
+        }
+        stage ('Test Stage') {
+            steps {
+                sh 'cd /home/talos/JavaProject2
+                sh 'java HelloWorld'
+            }
+        }
+        stage ('Deployment Stage') {
+            steps {
+                sh 'cd /home/talos/JavaProject2
+                sh 'java HelloWorld'
+            }
+        }
+    }
+}
